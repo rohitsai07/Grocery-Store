@@ -1,0 +1,92 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<display-name>To do List</display-name>
+
+	<welcome-file-list>
+		<welcome-file>Home</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+    	<servlet-name>user-login</servlet-name>
+    	<jsp-file>/WEB-INF/views/UserLogin.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>user-login</servlet-name>
+    	<url-pattern>/user/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>user-register</servlet-name>
+    	<jsp-file>/WEB-INF/views/UserRegister.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>user-register</servlet-name>
+    	<url-pattern>/user/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>seller-register</servlet-name>
+    	<jsp-file>/WEB-INF/views/SellerRegister.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>seller-register</servlet-name>
+    	<url-pattern>/seller/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>seller-login</servlet-name>
+    	<jsp-file>/WEB-INF/views/SellerLogin.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>seller-login</servlet-name>
+    	<url-pattern>/seller/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>Add-Product</servlet-name>
+    	<jsp-file>/WEB-INF/views/InsertProduct.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>Add-Product</servlet-name>
+    	<url-pattern>/seller/Add-Product</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>message</servlet-name>
+    	<jsp-file>/WEB-INF/views/Message.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>message</servlet-name>
+    	<url-pattern>/messageurl</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+    	<servlet-name>user-dashboard</servlet-name>
+    	<jsp-file>/WEB-INF/views/UserDashboard.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>user-dashboard</servlet-name>
+    	<url-pattern>/user/dashboard</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>seller-dashboard</servlet-name>
+    	<jsp-file>/WEB-INF/views/SellerDashboard.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>seller-dashboard</servlet-name>
+    	<url-pattern>/seller/dashboard</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
